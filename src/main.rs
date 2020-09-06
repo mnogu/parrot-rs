@@ -218,8 +218,7 @@ fn main() {
 
     for _ in 0..10 {
         for frame in frames.iter_mut() {
-            print!("{}", frame);
-            print!("\x1B[2J");
+            print!("{}\x1B[2J\x1B[1;1H", frame);
             thread::sleep(time::Duration::from_millis(100));
         }
     }
