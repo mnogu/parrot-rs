@@ -215,6 +215,7 @@ fn main() {
     let frames = vec![
         FRAME0, FRAME1, FRAME2, FRAME3, FRAME4, FRAME5, FRAME6, FRAME7, FRAME8, FRAME9,
     ];
+    // https://github.com/jmhobbs/terminal-parrot/blob/master/data.go
     let colors = vec![210, 222, 120, 123, 111, 134, 177, 207, 206, 204];
 
     for _ in 0..10 {
