@@ -221,7 +221,7 @@ fn main() {
     for _ in 0..10 {
         for (frame, color) in frames.iter().zip(colors.iter()) {
             print!("\x1B[38;5;{}m{}\x1B[m\x1B[2J\x1B[1;1H", color, frame);
-            thread::sleep(time::Duration::from_millis(100));
+            thread::sleep(time::Duration::from_millis(50));
         }
     }
 }
